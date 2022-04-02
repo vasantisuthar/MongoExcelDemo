@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Mongo Excel demo</title>
+
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        h1{
+            margin:5% 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Import Excel file to mongodb database</h1>
+        <form action="/uploadExcelFile" class="form-control w-50" enctype="multipart/form-data" method="post">
+            <input type="file" name="uploadfile" class="form-control" required accept='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel' >
+            <input type="submit" class="form-control btn-info" value="Upload Excel">
+     </form>
+    </div>
+</body>
+</html>
