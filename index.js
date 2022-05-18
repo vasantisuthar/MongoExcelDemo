@@ -6,8 +6,11 @@ const Student = require('./studentSchema');
 
 const app = express()
 
+
+console.log("commit from vasanti");
 console.log("console from master");
 console.log("console from other");
+
 mongoose.connect('mongodb://localhost:27017/MongoExcelDemo').then(() => {
     console.log('database connected')
 });
@@ -30,9 +33,12 @@ var excelUploads = multer({storage:excelStorage});
 app.get('/',(req,res) => {
     res.render('index.ejs');
     console.log("demo");
+    console.log("demo vasanti branch");
+    
     res.render('index.ejs');
 
     console.log("changed after pull");
+
 })
 
 // upload excel file and import in mongodb
