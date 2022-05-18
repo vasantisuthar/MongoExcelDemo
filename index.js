@@ -26,6 +26,7 @@ var excelStorage = multer.diskStorage({
 var excelUploads = multer({storage:excelStorage}); 
 
 app.get('/',(req,res) => {
+    console.log("demo");
        res.render('index.ejs');
 })
 
