@@ -33,14 +33,12 @@ var excelUploads = multer({storage:excelStorage});
 app.get('/',(req,res) => {
     res.render('index.ejs');
     console.log("demo");
-<<<<<<< HEAD
     console.log("demo vasanti branch");
-       res.render('index.ejs');
-=======
+    
     res.render('index.ejs');
 
     console.log("changed after pull");
->>>>>>> 6dc2d6acef902b687c8573940920bca6eebc4ad6
+
 })
 
 // upload excel file and import in mongodb
