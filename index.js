@@ -30,6 +30,7 @@ app.get('/',(req,res) => {
     console.log("demo");
     res.render('index.ejs');
 
+    console.log("changed after pull");
 })
 
 // upload excel file and import in mongodb
