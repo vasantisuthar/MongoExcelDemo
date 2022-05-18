@@ -7,6 +7,7 @@ const Student = require('./studentSchema');
 const app = express()
 
 console.log("console from master");
+console.log("console from other");
 mongoose.connect('mongodb://localhost:27017/MongoExcelDemo').then(() => {
     console.log('database connected')
 });
