@@ -26,7 +26,7 @@ var excelStorage = multer.diskStorage({
 var excelUploads = multer({storage:excelStorage}); 
 
 app.get('/',(req,res) => {
-       res.render('index.ejs');
+    res.render('index.ejs');
 })
 
 // upload excel file and import in mongodb
