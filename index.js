@@ -6,6 +6,7 @@ const Student = require('./studentSchema');
 
 const app = express()
 
+console.log("commit from vasanti");
 mongoose.connect('mongodb://localhost:27017/MongoExcelDemo').then(() => {
     console.log('database connected')
 });
